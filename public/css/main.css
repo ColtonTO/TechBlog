@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+#navbar {
+    list-style-type: none;
+    padding: 25px;
+    margin: 0;
+}
+
+#navbar li {
+    padding: 10px;
+    display: inline;
+}
+
+#navbar li p {
+    padding: 10px;
+    display: inline;
+    font-size: large;
+}
+
