@@ -11,7 +11,11 @@ app.use(session)
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public" )))
+
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
 });
